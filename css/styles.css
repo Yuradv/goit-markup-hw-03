@@ -36,7 +36,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .page-header {
@@ -163,6 +163,8 @@ body {
 }
 
 .section- {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: tomato;
 }
 
@@ -197,6 +199,7 @@ body {
 }
 
 .section-work-title {
+  padding-top: 0px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -210,20 +213,22 @@ body {
 
 .team-list {
   display: flex;
+  justify-content: center;
 }
 
 .team-list-description {
   padding-right: 30px;
   margin-bottom: 94px;
   outline: transparent;
+  border: 1pt solid #eeeeee;
 }
 .team-list-description:last-child {
   padding-right: 0;
 }
 
 .team-title {
-  margin-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -247,9 +252,13 @@ body {
 /* Footer */
 .footer {
   background-color: var(--secondary-bcg-color);
+  display: flex;
 }
 
 .footer .logo {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -265,6 +274,18 @@ body {
   line-height: 1.71;
 }
 
+.contacts-foot-item {
+  display: block;
+}
+.contacts-foot-item:last-child {
+  margin-bottom: 60px;
+}
+.contacts-foot .link {
+  color: var(--secondary-txt-color);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
 /* buttons */
 
 .button,
@@ -317,6 +338,7 @@ body {
   background-color: var(--accent-color);
 }
 
+/* Portfolio examples */
 .example-title {
   color: var(--main-txt-color);
   font-weight: 700;
@@ -330,3 +352,51 @@ body {
   font-size: 16px;
   line-height: 30px;
 }
+
+/* /Filter buttons/ */
+.filter {
+  display: flex;
+}
+
+.filter-item {
+  display: flex;
+  margin-top: 94px;
+  margin-right: 8px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0px;
+}
+
+.filter-button {
+  display: block;
+  margin-right: 8px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+/* .test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: teal;
+}
+
+.test-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: tomato;
+  margin: 30px;
+}
+
+.flex-element {
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0px;
+} */
